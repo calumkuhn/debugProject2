@@ -1,0 +1,4 @@
+/Users/calumkuhn/CLionProjects/untitled1/cmake-build-debug/CMakeFiles/sentiment.dir
+/Users/calumkuhn/CLionProjects/untitled1/cmake-build-debug/CMakeFiles/test_DSString.dir
+/Users/calumkuhn/CLionProjects/untitled1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/calumkuhn/CLionProjects/untitled1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

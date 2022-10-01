@@ -1,0 +1,200 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: untitled1
+# Configurations: Debug
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/calumkuhn/CLionProjects/untitled1/cmake-build-debug/
+# =============================================================================
+# Object build statements for EXECUTABLE target sentiment
+
+
+#############################################
+# Order-only phony target for sentiment
+
+build cmake_object_order_depends_target_sentiment: phony || CMakeFiles/sentiment.dir
+
+build CMakeFiles/sentiment.dir/main.cpp.o: CXX_COMPILER__sentiment_Debug /Users/calumkuhn/CLionProjects/untitled1/main.cpp || cmake_object_order_depends_target_sentiment
+  DEP_FILE = CMakeFiles/sentiment.dir/main.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1 -Wall -Wextra -pedantic -std=gnu++17
+  OBJECT_DIR = CMakeFiles/sentiment.dir
+  OBJECT_FILE_DIR = CMakeFiles/sentiment.dir
+
+build CMakeFiles/sentiment.dir/DSString.cpp.o: CXX_COMPILER__sentiment_Debug /Users/calumkuhn/CLionProjects/untitled1/DSString.cpp || cmake_object_order_depends_target_sentiment
+  DEP_FILE = CMakeFiles/sentiment.dir/DSString.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1 -Wall -Wextra -pedantic -std=gnu++17
+  OBJECT_DIR = CMakeFiles/sentiment.dir
+  OBJECT_FILE_DIR = CMakeFiles/sentiment.dir
+
+build CMakeFiles/sentiment.dir/StringCounter.cpp.o: CXX_COMPILER__sentiment_Debug /Users/calumkuhn/CLionProjects/untitled1/StringCounter.cpp || cmake_object_order_depends_target_sentiment
+  DEP_FILE = CMakeFiles/sentiment.dir/StringCounter.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1 -Wall -Wextra -pedantic -std=gnu++17
+  OBJECT_DIR = CMakeFiles/sentiment.dir
+  OBJECT_FILE_DIR = CMakeFiles/sentiment.dir
+
+build CMakeFiles/sentiment.dir/Functions.cpp.o: CXX_COMPILER__sentiment_Debug /Users/calumkuhn/CLionProjects/untitled1/Functions.cpp || cmake_object_order_depends_target_sentiment
+  DEP_FILE = CMakeFiles/sentiment.dir/Functions.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1 -Wall -Wextra -pedantic -std=gnu++17
+  OBJECT_DIR = CMakeFiles/sentiment.dir
+  OBJECT_FILE_DIR = CMakeFiles/sentiment.dir
+
+build CMakeFiles/sentiment.dir/ClassifiedTweet.cpp.o: CXX_COMPILER__sentiment_Debug /Users/calumkuhn/CLionProjects/untitled1/ClassifiedTweet.cpp || cmake_object_order_depends_target_sentiment
+  DEP_FILE = CMakeFiles/sentiment.dir/ClassifiedTweet.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1 -Wall -Wextra -pedantic -std=gnu++17
+  OBJECT_DIR = CMakeFiles/sentiment.dir
+  OBJECT_FILE_DIR = CMakeFiles/sentiment.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target sentiment
+
+
+#############################################
+# Link the executable sentiment
+
+build sentiment: CXX_EXECUTABLE_LINKER__sentiment_Debug CMakeFiles/sentiment.dir/main.cpp.o CMakeFiles/sentiment.dir/DSString.cpp.o CMakeFiles/sentiment.dir/StringCounter.cpp.o CMakeFiles/sentiment.dir/Functions.cpp.o CMakeFiles/sentiment.dir/ClassifiedTweet.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1
+  OBJECT_DIR = CMakeFiles/sentiment.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = sentiment
+  TARGET_PDB = sentiment.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_DSString
+
+
+#############################################
+# Order-only phony target for test_DSString
+
+build cmake_object_order_depends_target_test_DSString: phony || CMakeFiles/test_DSString.dir
+
+build CMakeFiles/test_DSString.dir/test_DSString.cpp.o: CXX_COMPILER__test_DSString_Debug /Users/calumkuhn/CLionProjects/untitled1/test_DSString.cpp || cmake_object_order_depends_target_test_DSString
+  DEP_FILE = CMakeFiles/test_DSString.dir/test_DSString.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1 -Wall -Wextra -pedantic -std=gnu++17
+  OBJECT_DIR = CMakeFiles/test_DSString.dir
+  OBJECT_FILE_DIR = CMakeFiles/test_DSString.dir
+
+build CMakeFiles/test_DSString.dir/DSString.cpp.o: CXX_COMPILER__test_DSString_Debug /Users/calumkuhn/CLionProjects/untitled1/DSString.cpp || cmake_object_order_depends_target_test_DSString
+  DEP_FILE = CMakeFiles/test_DSString.dir/DSString.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1 -Wall -Wextra -pedantic -std=gnu++17
+  OBJECT_DIR = CMakeFiles/test_DSString.dir
+  OBJECT_FILE_DIR = CMakeFiles/test_DSString.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_DSString
+
+
+#############################################
+# Link the executable test_DSString
+
+build test_DSString: CXX_EXECUTABLE_LINKER__test_DSString_Debug CMakeFiles/test_DSString.dir/test_DSString.cpp.o CMakeFiles/test_DSString.dir/DSString.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1
+  OBJECT_DIR = CMakeFiles/test_DSString.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = test_DSString
+  TARGET_PDB = test_DSString.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/calumkuhn/CLionProjects/untitled1/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/calumkuhn/CLionProjects/untitled1/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/calumkuhn/CLionProjects/untitled1 -B/Users/calumkuhn/CLionProjects/untitled1/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Target aliases.
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/calumkuhn/CLionProjects/untitled1/cmake-build-debug
+
+build all: phony sentiment test_DSString
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../data/test_dataset_10k.csv ../data/test_dataset_sentiment_10k.csv ../data/train_dataset_20k.csv ../data/train_dataset_small.csv /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build ../CMakeLists.txt ../data/test_dataset_10k.csv ../data/test_dataset_sentiment_10k.csv ../data/train_dataset_20k.csv ../data/train_dataset_small.csv /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all
